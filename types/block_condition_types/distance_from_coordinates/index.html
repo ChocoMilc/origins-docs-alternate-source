@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Distance From Coordinates (Block Condition Type) - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Distance From Coordinates (Block Condition Type)";
+        var mkdocs_page_input_path = "types/block_condition_types/distance_from_coordinates.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data_types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Distance From Coordinates (Block Condition Type)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="distance_from_coordinates">Distance From Coordinates</h1>
+<p><a href="../">Block Condition Type</a></p>
+<p>Compares the distance of the block's current position to the specified coordinates.</p>
+<p>Type ID: <code>origins:distance_from_coordinates</code></p>
+<h3 id="fields">Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>reference</code></td>
+<td><a href="../../data_types/string/">String</a></td>
+<td><code>"world_origin"</code></td>
+<td>The point to compare the distance to. Accepts <code>"world_origin"</code> or <code>"world_spawn"</code>.</td>
+</tr>
+<tr>
+<td><code>offset</code></td>
+<td><a href="../../data_types/vector/">Vector</a></td>
+<td><em>optional</em></td>
+<td>If specified, determines how much the reference point should be offset.</td>
+</tr>
+<tr>
+<td><code>ignore_x</code></td>
+<td><a href="../../data_types/boolean/">Boolean</a></td>
+<td><code>false</code></td>
+<td>Determines whether to consider the X axis to be 0.</td>
+</tr>
+<tr>
+<td><code>ignore_y</code></td>
+<td><a href="../../data_types/boolean/">Boolean</a></td>
+<td><code>false</code></td>
+<td>Determines whether to consider the Y axis to be 0.</td>
+</tr>
+<tr>
+<td><code>ignore_z</code></td>
+<td><a href="../../data_types/boolean/">Boolean</a></td>
+<td><code>false</code></td>
+<td>Determines whether to consider the Z axis to be 0.</td>
+</tr>
+<tr>
+<td><code>shape</code></td>
+<td><a href="../../data_types/string/">String</a></td>
+<td><code>"cube"</code></td>
+<td>Determines the shape of the check. Accepts <code>"cube"</code>, <code>"star"</code> or <code>"sphere"</code>.</td>
+</tr>
+<tr>
+<td><code>scale_reference_to_dimension</code></td>
+<td><a href="../../data_types/boolean/">Boolean</a></td>
+<td><code>true</code></td>
+<td>Determines whether to check for the reference point whilst considering the coordinate scale of the dimension.</td>
+</tr>
+<tr>
+<td><code>result_on_the_wrong_dimension</code></td>
+<td><a href="../../data_types/boolean/">Boolean</a></td>
+<td><em>optional</em></td>
+<td>If specified, this value will override the result of the comparison if the block being tested is not in the reference's dimension.</td>
+</tr>
+<tr>
+<td><code>round_to_digit</code></td>
+<td><a href="../../data_types/integer/">Integer</a></td>
+<td><em>optional</em></td>
+<td>If specified, rounds the result to the closest number with the specified amount of digits after the comma. Negative numbers also work (e.g: <code>-2</code> rounds to multiples of 100).</td>
+</tr>
+<tr>
+<td><code>comparison</code></td>
+<td><a href="../../data_types/comparison/">Comparison</a></td>
+<td></td>
+<td>Determines how the calculated distance (in blocks) should be compared to the specified value.</td>
+</tr>
+<tr>
+<td><code>compare_to</code></td>
+<td><a href="../../data_types/float/">Float</a></td>
+<td></td>
+<td>The value at which the calculated distance (in blocks) will be compared to.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples">Examples</h3>
+<pre><code class="language-json">&quot;block_condition&quot;: {
+    &quot;type&quot;: &quot;origins:distance_from_coordinates&quot;,
+    &quot;offset&quot;: {
+        &quot;x&quot;: 1024,
+        &quot;z&quot;: 512
+    },
+    &quot;ignore_y&quot;: true,
+    &quot;comparison&quot;: &quot;&lt;&quot;,
+    &quot;compare_to&quot;: 8
+}
+</code></pre>
+<p>This example will check if the block is within an 8 blocks radius relative to the specified coordinates (X: 1024, Z: 512).</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

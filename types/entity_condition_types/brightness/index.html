@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Brightness (Entity Condition Type) - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Brightness (Entity Condition Type)";
+        var mkdocs_page_input_path = "types/entity_condition_types/brightness.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data_types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Brightness (Entity Condition Type)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="brightness">Brightness</h1>
+<p><a href="../">Entity Condition Type</a></p>
+<p>Checks the brightness level at the entity's eyes, which ranges from 0 to 1.</p>
+<p>Type ID: <code>origins:brightness</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To calculate brightness at the player's eyes, the game first gathers the light level of the block the eyes are inside of. This light level is the highest between the block and sky light levels of the block. Then it calculates brightness with the following formula: <code>brightness = ambientLight + (1 - ambientLight) * lightLevel / (60 - 3 * lightLevel)</code>, with <code>ambientLight</code> as the dimension's ambient light, which is 0 in the overworld and the End, and 0.1 in the Nether. Thus the formula simplifies to <code>brightness = lightLevel / (60 - 3 * lightLevel)</code> for the overworld and the End. The calculated values, however, are slightly off due to <a href="https://0.30000000000000004.com/">the imprecision of floating point calculations</a>.</p>
+<p>Here's a table of light levels to brightness levels:</p>
+<table>
+<thead>
+<tr>
+<th>Light level</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overworld brightness</td>
+<td>0.0</td>
+<td>0.017543862</td>
+<td>0.03703704</td>
+<td>0.05882353</td>
+<td>0.08333334</td>
+<td>0.11111111</td>
+<td>0.14285715</td>
+<td>0.17948718</td>
+<td>0.22222225</td>
+<td>0.2727273</td>
+<td>0.33333334</td>
+<td>0.40740743</td>
+<td>0.50000006</td>
+<td>0.6190476</td>
+<td>0.77777773</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Nether brightness</td>
+<td>0.1</td>
+<td>0.11578947</td>
+<td>0.13333334</td>
+<td>0.15294118</td>
+<td>0.17500001</td>
+<td>0.2</td>
+<td>0.22857144</td>
+<td>0.26153848</td>
+<td>0.3</td>
+<td>0.34545457</td>
+<td>0.4</td>
+<td>0.4666667</td>
+<td>0.5500001</td>
+<td>0.6571428</td>
+<td>0.79999995</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="fields">Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>comparison</code></td>
+<td><a href="../../data_types/comparison/">Comparison</a></td>
+<td></td>
+<td>Determines how the calculated brightness value should be compared to the specified value.</td>
+</tr>
+<tr>
+<td><code>compare_to</code></td>
+<td><a href="../../data_types/float/">Float</a></td>
+<td></td>
+<td>The value at which the calculated brightness value will be compared to.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples">Examples</h3>
+<pre><code class="language-json">&quot;condition&quot;: {
+    &quot;type&quot;: &quot;origins:brightness&quot;,
+    &quot;comparison&quot;: &quot;&lt;=&quot;,
+    &quot;compare_to&quot;: 0.5
+}
+</code></pre>
+<p>This example will check if the brightness level at the player's eyes is 0.5 or lower, which corresponds to a light level of 11 or below in any of the three default dimensions.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

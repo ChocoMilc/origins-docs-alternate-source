@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Data Types - Origins Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Data Types";
+        var mkdocs_page_input_path = "types/data_types.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Data Types</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#json">JSON</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#origins-specific">Origins-specific</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/extras/biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/extras/damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/extras/feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/extras/keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/extras/positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/extras/sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../misc/extras/value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">General Types</li>
+      <li class="breadcrumb-item active">Data Types</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="data_types">Data Types</h1>
+<p>Data types are used everywhere in the JSON files. Every field in a JSON has to have a specific type. For example, a page about a specific power type tells you which fields are supported and which data type they need to have.</p>
+<h3 id="json">JSON</h3>
+<ul>
+<li><a href="array/">Array</a></li>
+<li><a href="boolean/">Boolean</a></li>
+<li><a href="float/">Float</a></li>
+<li><a href="integer/">Integer</a></li>
+<li><a href="object/">Object</a></li>
+<li><a href="string/">String</a></li>
+</ul>
+<h3 id="origins-specific">Origins-specific</h3>
+<ul>
+<li><a href="action_result/">Action Result</a></li>
+<li><a href="attribute_modifier_operation/">Attribute Modifier Operation</a></li>
+<li><a href="attribute_modifier/">Attribute Modifier</a></li>
+<li><a href="attributed_attribute_modifier_operation/">Attributed Attribute Modifier Operation</a></li>
+<li><a href="attributed_attribute_modifier/">Attributed Attribute Modifier</a></li>
+<li><a href="comparison/">Comparison</a></li>
+<li><a href="container_type/">Container Type</a></li>
+<li><a href="crafting_recipe/">Crafting Recipe</a></li>
+<li><a href="damage_source/">Damage Source <span style="color:darkred"><b>(DEPRECATED)</b></span></a></li>
+<li><a href="default_translatable_text_component/">Default Translatable Text Component</a></li>
+<li><a href="destruction_type/">Destruction Type</a></li>
+<li><a href="entity_type_taglike/">Entity Type Tag-like</a></li>
+<li><a href="fluid_handling/">Fluid Handling</a></li>
+<li><a href="food_component/">Food Component</a></li>
+<li><a href="heightmap_type/">Heightmap Type</a></li>
+<li><a href="hud_render/">Hud Render</a></li>
+<li><a href="identifier/">Identifier</a></li>
+<li><a href="ingredient/">Ingredient</a></li>
+<li><a href="inventory_type/">Inventory Type</a></li>
+<li><a href="item_slot/">Item Slot</a></li>
+<li><a href="item_stack/">Item Stack</a></li>
+<li><a href="key/">Key</a></li>
+<li><a href="material/">Material</a></li>
+<li><a href="nbt/">NBT</a></li>
+<li><a href="particle_effect/">Particle Effect</a></li>
+<li><a href="player_ability/">Player Ability</a></li>
+<li><a href="positioned_item_stack/">Positioned Item Stack</a></li>
+<li><a href="process_mode/">Process Mode</a></li>
+<li><a href="shape_type/">Shape Type</a></li>
+<li><a href="shape/">Shape</a></li>
+<li><a href="space/">Space</a></li>
+<li><a href="stat/">Stat</a></li>
+<li><a href="status_effect_instance/">Status Effect Instance</a></li>
+<li><a href="text_component/">Text Component</a></li>
+<li><a href="vector/">Vector</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../badge_types/" class="btn btn-neutral float-left" title="Badge Types"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../power_types/" class="btn btn-neutral float-right" title="Power Types">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../badge_types/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../power_types/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

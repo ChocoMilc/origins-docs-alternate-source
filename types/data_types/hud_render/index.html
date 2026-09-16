@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Hud Render (Data Type) - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Hud Render (Data Type)";
+        var mkdocs_page_input_path = "types/data_types/hud_render.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Hud Render (Data Type)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hud_render">Hud Render</h1>
+<p><a href="../">Data Type</a></p>
+<p>An <a href="../object/">object</a> or <a href="../array/">array</a> of <a href="../object/">objects</a> used to define how a resource or cooldown bar should be rendered.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the specified HUD render is an array of objects, then the HUD render will choose the first object that is allowed to be rendered (its <code>should_render</code> field set to <code>true</code>) and its condition fulfilled (or if its <code>condition</code> field is absent) from top to bottom. The <code>order</code> value of the very first object will also be inherited by the following objects that do not have the <code>order</code> field specified.</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>The entity condition specified in the <code>condition</code> field is only evaluated on the <span style="color:goldenrod"><b>client-side</b></span>, therefore, using entity condition types that only work on the server-side will not work.</p>
+</div>
+<h3 id="fields">Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>should_render</code></td>
+<td><a href="../boolean/">Boolean</a></td>
+<td><code>true</code></td>
+<td>Whether the bar should be visible or not.</td>
+</tr>
+<tr>
+<td><code>sprite_location</code></td>
+<td><a href="../identifier/">Identifier</a></td>
+<td><code>"origins:textures/gui/resource_bar.png"</code></td>
+<td>The path to the file in the assets which contains what the bar looks like. See the <a href="../../../misc/extras/sprites/">List of sprites</a> for a list of files included by default in the mod.</td>
+</tr>
+<tr>
+<td><code>bar_index</code></td>
+<td><a href="../integer/">Integer</a></td>
+<td><code>0</code></td>
+<td>The indexed position of the bar on the sprite to use. Please note that indexes start at <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>icon_index</code></td>
+<td><a href="../integer/">Integer</a></td>
+<td><code>0</code></td>
+<td>The indexed position of the icon on the sprite to use. Please note that indexes start at <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>condition</code></td>
+<td><a href="../../entity_condition_types/">Entity Condition Type</a></td>
+<td><em>optional</em></td>
+<td>If set (and <code>should_render</code> is true), the bar will only display when the entity with the power fulfills this condition.</td>
+</tr>
+<tr>
+<td><code>inverted</code></td>
+<td><a href="../boolean/">Boolean</a></td>
+<td><code>false</code></td>
+<td>If set to true, inverts the way the hud render process (it'll look like its value is being decreased).</td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td><a href="../integer/">Integer</a></td>
+<td><em>optional</em></td>
+<td>If specified, this determines the position of the HUD render when being rendered. The higher the <code>order</code> value is, the higher it is on the rendered HUD render stack.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples">Examples</h3>
+<pre><code class="language-json">&quot;hud_render&quot;: {
+    &quot;bar_index&quot;: 4,
+    &quot;condition&quot;: {
+        &quot;type&quot;: &quot;origins:power_active&quot;,
+        &quot;power&quot;: &quot;origins:phantomize&quot;
+    }
+}
+</code></pre>
+<p>This definition shows the resource/cooldown as the Elytrian bar (white and with a wings icon), but only while the player is phantomized.
+<br></p>
+<pre><code class="language-json">&quot;hud_render&quot;: {
+    &quot;sprite_location&quot;: &quot;origins:textures/gui/community/spiderkolo/resource_bar_03.png&quot;,
+    &quot;bar_index&quot;: 5
+}
+</code></pre>
+<p>This definition shows the resource/cooldown as a white bar with a bone icon.
+<br></p>
+<pre><code class="language-json">&quot;hud_render&quot;: [
+    {
+        &quot;sprite_location&quot;: &quot;origins:textures/gui/community/spiderkolo/resource_bar_03.png&quot;,
+        &quot;bar_index&quot;: 3,
+        &quot;condition&quot;: {
+            &quot;type&quot;: &quot;origins:relative_health&quot;,
+            &quot;comparison&quot;: &quot;&lt;=&quot;,
+            &quot;compare_to&quot;: 0.5
+        }
+    },
+    {
+        &quot;sprite_location&quot;: &quot;origins:textures/gui/community/spiderkolo/resource_bar_01.png&quot;,
+        &quot;bar_index&quot;: 4
+    }
+]
+</code></pre>
+<p>This definition will show the resource/cooldown as a white bar with a bone icon if the player has half or less of their max health. Otherwise, the resource/cooldown will be shown as a red bar with a heart icon.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

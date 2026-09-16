@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Dependencies Explained - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Dependencies Explained";
+        var mkdocs_page_input_path = "guides/addon/dependencies.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Dependencies Explained</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#calio">Calio</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#apoli">Apoli</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/data_types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Add-on Guides</li>
+      <li class="breadcrumb-item active">Dependencies Explained</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="explaining_origins_dependencies">Explaining Origins' dependencies</h1>
+<p>You probably noticed there was a huge chunk of repositories you had to add in the previous step in order to include Origins in your project. That's because Origins itself depends on many other libraries:</p>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Responsibility</th>
+<th>Used By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/apace100/apoli">Apoli</a></td>
+<td>data-driven powers</td>
+<td>Origins</td>
+</tr>
+<tr>
+<td><a href="https://github.com/apace100/calio">Calio</a></td>
+<td>serialization of data</td>
+<td>Origins, Apoli</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Ladysnake/PlayerAbilityLib">PlayerAbilityLib</a></td>
+<td>compatibility of mods which modify "abilities" (such as creative flight)</td>
+<td>Apoli</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OnyxStudios/Cardinal-Components-API">Cardinal Components API</a></td>
+<td>attaching data to objects</td>
+<td>Origins, Apoli</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shedaniel/cloth-config">Cloth Config</a></td>
+<td>easy creation of configuration files and screens</td>
+<td>Origins</td>
+</tr>
+<tr>
+<td>(<a href="https://github.com/TerraformersMC/ModMenu">Mod Menu</a>)</td>
+<td>showing mods, allowing modders to add configuration in-game</td>
+<td>Origins</td>
+</tr>
+</tbody>
+</table>
+<p>Origins bundles all of these (except Mod Menu, which is an optional dependency) in the final JAR that players download, in order to make the life of players who install the mod easier.</p>
+<p>The most important libraries of which you'll need to understand their functionality and distinction are going to be Apoli and Calio. Their features were originally a part of Origins, but were extracted so I (and other developers too, of course) could use them for other mods!</p>
+<h3 id="calio">Calio</h3>
+<p>Origins is very focused on reading and handling JSON data, as well as sending that data across the network to players (to make datapacks be only required on the server-side). Usually, you'd have to check the existence of JSON fields manually, read them in specifically for the object you want to construct, and then also create a <code>read</code> and <code>write</code> method which sends and receives data from <code>PacketByteBuf</code>s.</p>
+<p>Having to do this several times for each new object you want to read means the code will be very error-prone, you'd have a lot of redundancy because you'd write error handling code more often than once, and might cause inconsistencies in error handling if you're not careful.</p>
+<p>That's where the <code>SerializableData</code> system added by Calio comes in. It allows defining a group of JSON fields you want to read from a file, along with their corresponding data types. You can specify optional fields, and fields with default values if you want. The system also has easy-to-use methods for sending and receiving data across the network.
+Error handling is defined per type. Each data type that a field can assume is defined as a <code>SerializableDataType</code>, with its own <code>read</code>, <code>write</code>, and <code>receive</code> methods. Most of the usual data types in Java and vanilla Minecraft are defined statically in the <code>SerializableDataTypes</code> class.</p>
+<h3 id="apoli">Apoli</h3>
+<p>Apoli actually contains the bulk of logic for the Origins mod. It contains the power system, allowing to assign powers to players, as well as conditions and actions. It handles reading these from JSON (via Calio's system), and by itself allows attaching powers to entities with the <code>power</code> command, or when used as a library from code. Powers can be added to entities from different sources, so for example adding an amulet that grants a power won't conflict with an origin which grants the same power.</p>
+<p>After the split of Origins into the three mods (Calio, Apoli and Origins), Origins as a mod boiled down to depending on Apoli as a library, and just adding the "origins system" as a way to let players choose a set of powers at the start of the game.</p>
+<p>Almost all of the conditions, actions and power types which are documented on this wiki are part of Apoli. Origins adds (or overrides) a few of these, as they interact with Origins directly: the <code>origin</code> condition and <code>action_on_callback</code> power type.</p>
+<p>Apart from that, Origins defines some specific power functionality which aren't generalized to a power type yet.</p>
+<p>Most of what you'll do in an Origins add-on will interact with Apoli directly, and not Origins. Some developers even decided to not make an "Origins add-on" per se, but instead create their own Apoli add-on in which they added the power types they needed, and then built their Origin add-ons on top of that. How you structure your mod in the end is up to you.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../workspace_setup/" class="btn btn-neutral float-left" title="Workspace Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../../json/badge/" class="btn btn-neutral float-right" title="Badge JSON">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../workspace_setup/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../../json/badge/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

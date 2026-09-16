@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Sprites - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sprites";
+        var mkdocs_page_input_path = "misc/extras/sprites.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/data_types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Sprites</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Extras</li>
+      <li class="breadcrumb-item active">Sprites</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="list_of_resource_bar_files">List of resource bar files</h1>
+<table>
+<thead>
+<tr>
+<th>Author</th>
+<th>Sprite Location</th>
+<th style="text-align: center;">Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apace</td>
+<td><code>origins:textures/gui/resource_bar.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/resource_bar.png">Link</a></td>
+</tr>
+<tr>
+<td>SpiderKolo</td>
+<td><code>origins:textures/gui/community/spiderkolo/resource_bar_01.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/community/spiderkolo/resource_bar_01.png">Link</a></td>
+</tr>
+<tr>
+<td>SpiderKolo</td>
+<td><code>origins:textures/gui/community/spiderkolo/resource_bar_02.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/community/spiderkolo/resource_bar_02.png">Link</a></td>
+</tr>
+<tr>
+<td>SpiderKolo</td>
+<td><code>origins:textures/gui/community/spiderkolo/resource_bar_03.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/community/spiderkolo/resource_bar_03.png">Link</a></td>
+</tr>
+<tr>
+<td>SpiderKolo</td>
+<td><code>origins:textures/gui/community/spiderkolo/resource_bar_points_01.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/community/spiderkolo/resource_bar_points_01.png">Link</a></td>
+</tr>
+<tr>
+<td>JustHuangHere</td>
+<td><code>origins:textures/gui/community/huang/resource_bar_01.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/community/huang/resource_bar_01.png">Link</a></td>
+</tr>
+<tr>
+<td>JustHuangHere</td>
+<td><code>origins:textures/gui/community/huang/resource_bar_02.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/community/huang/resource_bar_02.png">Link</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="list_of_badge_files">List of badge files</h1>
+<p><strong>Colors</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Sprite Location</th>
+<th style="text-align: center;">Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Black</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/black.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/black.png">Link</a></td>
+</tr>
+<tr>
+<td>White</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/white.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/white.png">Link</a></td>
+</tr>
+<tr>
+<td>Red</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/red.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/red.png">Link</a></td>
+</tr>
+<tr>
+<td>Green</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/green.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/green.png">Link</a></td>
+</tr>
+<tr>
+<td>Blue</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/blue.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/blue.png">Link</a></td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/yellow.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/yellow.png">Link</a></td>
+</tr>
+<tr>
+<td>Magenta</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/magenta.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/magenta.png">Link</a></td>
+</tr>
+<tr>
+<td>Pink</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/pink.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/pink.png">Link</a></td>
+</tr>
+<tr>
+<td>Cyan</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/cyan.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/cyan.png">Link</a></td>
+</tr>
+<tr>
+<td>Brown</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/brown.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/brown.png">Link</a></td>
+</tr>
+<tr>
+<td>Dark Gray</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/dark_gray.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/dark_gray.png">Link</a></td>
+</tr>
+<tr>
+<td>Light Gray</td>
+<td><code>origins:textures/gui/community/silent/badge/colors/light_gray.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/colors/light_gray.png">Link</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Icons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Sprite Location</th>
+<th style="text-align: center;">Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td>
+<td><code>origins:textures/gui/badge/active.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/badge/active.png">Link</a></td>
+</tr>
+<tr>
+<td>Info</td>
+<td><code>origins:textures/gui/badge/info.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/badge/info.png">Link</a></td>
+</tr>
+<tr>
+<td>Toggle</td>
+<td><code>origins:textures/gui/badge/toggle.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/badge/toggle.png">Link</a></td>
+</tr>
+<tr>
+<td>Armor</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/armor.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/armor.png">Link</a></td>
+</tr>
+<tr>
+<td>Pickaxe</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/pickaxe.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/pickaxe.png">Link</a></td>
+</tr>
+<tr>
+<td>Shield</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/shield.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/shield.png">Link</a></td>
+</tr>
+<tr>
+<td>Sword</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sword.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sword.png">Link</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Numbers and Math</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Sprite Location</th>
+<th style="text-align: center;">Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Expression (Addition)</td>
+<td><code>origins:textures/gui/community/silent/badge/math/expression_add.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/expression_add.png">Link</a></td>
+</tr>
+<tr>
+<td>Expression (Divide)</td>
+<td><code>origins:textures/gui/community/silent/badge/math/expression_divide.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/expression_divide.png">Link</a></td>
+</tr>
+<tr>
+<td>Expression (Equal)</td>
+<td><code>origins:textures/gui/community/silent/badge/math/expression_equals.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/expression_equals.png">Link</a></td>
+</tr>
+<tr>
+<td>Expression (Multiply)</td>
+<td><code>origins:textures/gui/community/silent/badge/math/expression_multiply.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/expression_multiply.png">Link</a></td>
+</tr>
+<tr>
+<td>Expression (Alt. Multiply)</td>
+<td><code>origins:textures/gui/community/silent/badge/math/expression_multiply_alt.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/expression_multiply_alt.png">Link</a></td>
+</tr>
+<tr>
+<td>Expression (Subtract)</td>
+<td><code>origins:textures/gui/community/silent/badge/math/expression_subtract.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/expression_subtract.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 0</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_0.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_0.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 1</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_1.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_1.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 2</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_2.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_2.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 3</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_3.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_3.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 4</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_4.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_4.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 5</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_5.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_5.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 6</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_6.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_6.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 7</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_7.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_7.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 8</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_8.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_8.png">Link</a></td>
+</tr>
+<tr>
+<td>Number 9</td>
+<td><code>origins:textures/gui/community/silent/badge/math/number_9.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/math/number_9.png">Link</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shapes</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Sprite Location</th>
+<th style="text-align: center;">Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arrow (Down)</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/arrow_down.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/arrow_down.png">Link</a></td>
+</tr>
+<tr>
+<td>Arrow (Left)</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/arrow_left.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/arrow_left.png">Link</a></td>
+</tr>
+<tr>
+<td>Arrow (Right)</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/arrow_right.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/arrow_right.png">Link</a></td>
+</tr>
+<tr>
+<td>Arrow (Up)</td>
+<td><code>origins:textures/gui/badge/arrow_up.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/badge/arrow_up.png">Link</a></td>
+</tr>
+<tr>
+<td>Circle</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/shape_circle.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/shape_circle.png">Link</a></td>
+</tr>
+<tr>
+<td>Heart</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/shape_heart.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/shape_heart.png">Link</a></td>
+</tr>
+<tr>
+<td>Square</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/shape_square.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/shape_square.png">Link</a></td>
+</tr>
+<tr>
+<td>Star</td>
+<td><code>origins:textures/gui/badge/star.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/badge/star.png">Link</a></td>
+</tr>
+<tr>
+<td>Triangle</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/shape_triangle.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/shape_triangle.png">Link</a></td>
+</tr>
+<tr>
+<td>Pointed Triangle (Down)</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/triangle_down.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/triangle_down.png">Link</a></td>
+</tr>
+<tr>
+<td>Pointed Triangle (Left)</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/triangle_left.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/triangle_left.png">Link</a></td>
+</tr>
+<tr>
+<td>Pointed Triangle (Right)</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/triangle_right.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/triangle_right.png">Link</a></td>
+</tr>
+<tr>
+<td>Pointed Triangle (Up)</td>
+<td><code>origins:textures/gui/community/silent/badge/shapes/triangle_up.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/shapes/triangle_up.png">Link</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sun/Moon Icons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Sprite Location</th>
+<th style="text-align: center;">Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Moon (First Quarter)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/moon_first_quarter.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/moon_first_quarter.png">Link</a></td>
+</tr>
+<tr>
+<td>Moon (Full)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/moon_full.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/moon_full.png">Link</a></td>
+</tr>
+<tr>
+<td>Moon (New)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/moon_new.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/moon_new.png">Link</a></td>
+</tr>
+<tr>
+<td>Moon (Icon)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/moon_icon.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/moon_icon.png">Link</a></td>
+</tr>
+<tr>
+<td>Moon (Third Quarter)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/moon_third_quarter.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/moon_third_quarter.png">Link</a></td>
+</tr>
+<tr>
+<td>Moon (Waning Crescent)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/moon_waning_crescent.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/moon_waning_crescent.png">Link</a></td>
+</tr>
+<tr>
+<td>Moon (Waning Gibbous)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/moon_waning_gibbous.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/moon_waning_gibbous.png">Link</a></td>
+</tr>
+<tr>
+<td>Moon (Waxing Crescent)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/moon_waxing_crescent.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/moon_waxing_crescent.png">Link</a></td>
+</tr>
+<tr>
+<td>Moon (Waxing Gibbous)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/moon_waxing_gibbous.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/moon_waxing_gibbous.png">Link</a></td>
+</tr>
+<tr>
+<td>Sun (Icon)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sun_icon.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sun_icon.png">Link</a></td>
+</tr>
+<tr>
+<td>Sun (Sky)</td>
+<td><code>origins:textures/gui/community/silent/badge/icons/sky/sun.png</code></td>
+<td style="text-align: center;"><a href="https://github.com/apace100/origins-fabric/blob/1.20/src/main/resources/assets/origins/textures/gui/community/silent/badge/icons/sky/sun.png">Link</a></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../positioned_item_stack_slots/" class="btn btn-neutral float-left" title="Positioned Item Stack Slots"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../value_modifying_power_classes/" class="btn btn-neutral float-right" title="Value Modifying Power Classes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../positioned_item_stack_slots/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../value_modifying_power_classes/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

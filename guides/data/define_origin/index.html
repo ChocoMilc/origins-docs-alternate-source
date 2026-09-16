@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Defining an Origin - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Defining an Origin";
+        var mkdocs_page_input_path = "guides/data/define_origin.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Defining an Origin</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#related_pages">Related pages</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/data_types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../misc/extras/value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Datapack Guides</li>
+      <li class="breadcrumb-item active">Defining an Origin</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="defining_an_origin_in_json">Defining an Origin in JSON</h1>
+<p>Origins are defined in JSON files. Let's use these to create a fictional new origin, a <em>Supermorph</em>, for our <a href="https://minecraft.wiki/w/Data_Pack">Data Pack</a> which we call <em>OriginSuperPack</em>. We'd like this Origin to be a bit overpowered: Metamorphs are immune to fire, have Elytra Flight and can teleport with ender pearls. Their only drawback is that they need a bed at a high altitude, just like Avians. This would be a JSON file which would accomplish that:</p>
+<pre><code class="language-json">{
+    &quot;powers&quot;: [
+        &quot;origins:fire_immunity&quot;,
+        &quot;origins:elytra&quot;,
+        &quot;origins:throw_ender_pearl&quot;,
+        &quot;origins:fresh_air&quot;
+    ],
+    &quot;icon&quot;: &quot;minecraft:slime_ball&quot;,
+    &quot;order&quot;: 4,
+    &quot;impact&quot;: 1
+}
+</code></pre>
+<p>This is the JSON file defining our new <em>Supermorph</em> origin. We put it in <code>data/originsuperpack/origins/supermorph.json</code>. In general, the file location should be as follows: <code>data/&lt;namespace&gt;/origins/&lt;path&gt;.json</code>. You can also use the namespace <code>origins</code> and the name of an existing origin, such as <code>avian</code>, in order to override the origin defined by the default mod: <code>data/origins/origins/avian.json</code>. <strong>But do remember to add a <code>loading_priority</code> field to the file that is higher than the original origin's</strong> (for all origins that come with the base mod, that value is <code>0</code>).</p>
+<p>When you put the file in the correct file structure of a data pack and put it into a world (either when you create the world, or after the world is loaded drag it into the world's <code>datapacks</code> folder), the new origin still does not appear! Why? <strong>Layers.</strong></p>
+<p>The new origin still needs to be added to the origin layer. Layers are the way that Origins has to allow players to have multiple origins. By default, there is only one layer, <code>origins:origin</code>. If you wanted, you could create your own layer and allow players to select a second origin! Here's how to add our origin to the default origin layer though: we need to create a layer file with the same ID of the layer we want to add to. This means our file should be located in <code>data/origins/origin_layers/origin.json</code>. The file content would then look like this:</p>
+<pre><code class="language-json">{
+    &quot;replace&quot;: false,
+    &quot;origins&quot;: [
+        &quot;originsuperpack:supermorph&quot;
+    ]
+}
+</code></pre>
+<p><code>replace</code> just tells Origins that we want to add to the already existing layer, instead of replacing it entirely. The <code>origins</code> field meanwhile specifies the IDs of the origins we want to append to the layer. See below for a complete description of the layer format (which is relevant if you want to create your own layer).</p>
+<p>Now, our newly created <em>Supermorph</em> origin should show up, along with a nice slimeball icon, in the list.</p>
+<p>However, the origin still doesn't display a correct name or description. One way to fix that is by adding a <a href="https://minecraft.wiki/w/Resource_Pack">Resource Pack</a> as well, with a translation for the language you're playing in (probably <code>en_us.json</code>):</p>
+<pre><code class="language-json">{
+    &quot;origin.originsuperpack.supermorph.name&quot;: &quot;Supermorph&quot;,
+    &quot;origin.originsuperpack.supermorph.description&quot;: &quot;The Supermorphs are crazy origins which I created for a tutorial!&quot;
+}
+</code></pre>
+<p>Instead of adding these to a resource pack though, which would be required on the client-side, Origins also allows setting a name and description in the datapack. To do that, just add a <code>name</code> and a <code>description</code> field to the JSON file defining your origin, like this:</p>
+<pre><code class="language-json">{
+    &quot;powers&quot;: [
+        &quot;origins:fire_immunity&quot;,
+        &quot;origins:elytra&quot;,
+        &quot;origins:throw_ender_pearl&quot;,
+        &quot;origins:fresh_air&quot;
+    ],
+    &quot;icon&quot;: &quot;minecraft:slime_ball&quot;,
+    &quot;order&quot;: 4,
+    &quot;impact&quot;: 1,
+    &quot;name&quot;: &quot;Supermorph&quot;,
+    &quot;description&quot;: &quot;The Supermorphs are crazy origins which I created for a tutorial!&quot;
+}
+</code></pre>
+<p>That concludes this tutorial on how to define custom origins using existing powers. If everything works, the next step would be to learn how to <a href="../define_power/">add a custom power</a></p>
+<h3 id="related_pages">Related pages</h3>
+<ul>
+<li><a href="../../../json/origin/">Origin JSON</a></li>
+<li><a href="../../../json/upgrade/">Upgrade JSON</a></li>
+<li><a href="../../../json/origin_layer/">Layer JSON</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../define_power/" class="btn btn-neutral float-right" title="Defining a Power">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../define_power/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Damage Source Names - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Damage Source Names";
+        var mkdocs_page_input_path = "misc/extras/damage_source_names.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/data_types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Damage Source Names</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#list_of_vanilla_damage_source_names">List of vanilla damage source names</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#list_of_origins_damage_source_names">List of Origins damage source names</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Extras</li>
+      <li class="breadcrumb-item active">Damage Source Names</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="damage_source_names">Damage Source Names</h1>
+<p>Damage Source Names are <a href="../../../types/data_types/string/">Strings</a> used for classifying what type of damage is taken/given, and to determine the death message for the damage upon being killed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Hovering the cursor over the damage source names will reveal its death message.</p>
+</div>
+<h3 id="list_of_vanilla_damage_source_names">List of vanilla damage source names</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was squashed by a falling anvil"><code>anvil</code></a></td>
+<td>Being hit by a falling Anvil.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was squashed by a falling anvil whilst fighting &lt;player/mob&gt;"><code>anvil.player</code></a></td>
+<td>Being hit by a falling Anvil while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was shot by &lt;player/mob&gt;"><code>arrow</code></a></td>
+<td>Being shot by a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was shot by &lt;player/mob&gt; using &lt;item&gt;"><code>arrow.item</code></a></td>
+<td>Being shot by a player/mob using a renamed Bow or Crossbow.</td>
+</tr>
+<tr>
+<td><a href="https://bugs.mojang.com/browse/MCPE-28723" title="&lt;victim&gt; was killed by [Intentional Game Design]"><code>badRespawnPoint</code></a></td>
+<td>Being hit by an explosion caused by Beds from attempting to use it in The End, The Nether or custom dimensions that has Beds disabled.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was pricked to death"><code>cactus</code></a></td>
+<td>Making contact with a Cactus.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; walked into a cactus whilst trying to escape &lt;player/mob&gt;"><code>cactus.player</code></a></td>
+<td>Making contact with a Cactus while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was squished too much"><code>cramming</code></a></td>
+<td>Being in the same spot as many other entities.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was squashed by &lt;player/mob&gt;"><code>cramming.player</code></a></td>
+<td>Being in the same spot as many other entities while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was roasted in dragon breath"><code>dragonBreath</code></a></td>
+<td>Being damaged by the Dragon's breath. <strong>Unused in vanilla.</strong> (Dragon breath deals <code>magic</code> damage).</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was roasted in dragon breath by &lt;player/mob&gt;"><code>dragonBreath.player</code></a></td>
+<td>Being damaged by the Dragon's breath while fighting a player/mob. <strong>Unused in vanilla.</strong> (Dragon breath deals <code>magic</code> damage).</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; drowned"><code>drown</code></a></td>
+<td>Drowning.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; drowned whilst trying to escape &lt;player/mob&gt;"><code>drown.player</code></a></td>
+<td>Drowning while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; died from dehydration"><code>dryout</code></a></td>
+<td>Drying out. <strong>Unused in vanilla.</strong></td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; died from dehydration whilst trying to escape &lt;player/mob&gt;"><code>dryout.player</code></a></td>
+<td>Drying out while fighting a player/mob. <strong>Unused in vanilla.</strong></td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was killed by even more magic"><code>even_more_magic</code></a></td>
+<td>If the death message is too large to send. <strong>Unused in vanilla.</strong></td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; blew up"><code>explosion</code></a></td>
+<td>Being hit by a regular explosion.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was blown up by &lt;player/mob&gt;"><code>explosion.player</code></a></td>
+<td>Being hit by an explosion from a mob that explodes or TNT lit by a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; hit the ground too hard"><code>fall</code></a></td>
+<td>Falling from a high place.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; hit the ground too hard whilst trying to escape &lt;player/mob&gt;"><code>fall.player</code></a></td>
+<td>Falling from a high place while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was squashed by a falling block"><code>fallingBlock</code></a></td>
+<td>Being hit by a falling block that's not an Anvil block.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was squashed by a falling block whilst fighting &lt;player/mob&gt;"><code>fallingBlock.player</code></a></td>
+<td>Being hit by a falling block that's not an Anvil block while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was skewered by a falling stalactite"><code>fallingStalactite</code></a></td>
+<td>Being hit by a falling Stalactite block.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was skewered by a falling stalactite whilst fighting &lt;player/mob&gt;"><code>fallingStalactite.player</code></a></td>
+<td>Being hit by a falling Stalactite block while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was fireballed by &lt;player/mob&gt;"><code>fireball</code></a></td>
+<td>Being hit by a fireball shot by a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was fireballed by &lt;player/mob&gt; using &lt;item&gt;"><code>fireball.item</code></a></td>
+<td>Being hit by a fireball shot by a player/mob holding a renamed item.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; went off with a bang"><code>fireworks</code></a></td>
+<td>Being hit by a firework explosion of a firework rocket.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; went off with a bang whilst fighting &lt;player/mob&gt;"><code>fireworks.player</code></a></td>
+<td>Being hit by a firework explosion of a firework rocket while fighting with a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; went off with a bang due to a firework fired from &lt;item&gt; by &lt;player/mob&gt;"><code>fireworks.item</code></a></td>
+<td>Being hit by a firework explosion of a firework rocket shot by a player/mob using a renamed Crossbow.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; experienced kinetic energy"><code>flyIntoWall</code></a></td>
+<td>Flying into a wall at high speed using an Elytra.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; experienced kinetic energy whilst trying to escape &lt;player/mob&gt;"><code>flyIntoWall.player</code></a></td>
+<td>Flying into a wall at high speed using an Elytra while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; froze to death"><code>freeze</code></a></td>
+<td>Being in Powder Snow for too long.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was frozen to death by &lt;player/mob&gt;"><code>freeze.player</code></a></td>
+<td>Being in Powder Snow for too long while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; died"><code>generic</code></a></td>
+<td>Being damaged by a damage source which doesn't have a specific type.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; died because of &lt;player/mob"><code>generic.player</code></a></td>
+<td>Being damaged by a damage source which doesn't have a specific type while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; discovered the floor was lava"><code>hotFloor</code></a></td>
+<td>Standing on Magma.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; walked into danger zone due to &lt;player/mob&gt;"><code>hotFloor.player</code></a></td>
+<td>Standing on Magma while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was killed by &lt;player/mob&gt; using magic"><code>indirectMagic</code></a></td>
+<td>Being damaged by a damage source considered as indirect magic damage such as from thrown Splash Potions.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was killed by &lt;player/mob&gt; using &lt;item&gt;"><code>indirectMagic.item</code></a></td>
+<td>Being damaged by a damage source considered as indirect magic damage such as from thrown Splash Potions whilst fighting a player/mob holding a renamed item.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; went up in flames"><code>inFire</code></a></td>
+<td>Standing inside Fire.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; walked into fire whilst fighting &lt;player/mob&gt;"><code>inFire.player</code></a></td>
+<td>Standing inside Fire whilst fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; suffocated in a wall"><code>inWall</code></a></td>
+<td>Being inside a solid block.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; suffocated in a wall whilst fighting &lt;player/mob&gt;"><code>inWall.player</code></a></td>
+<td>Being inside a solid block while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; tried to swim in lava"><code>lava</code></a></td>
+<td>Being in Lava.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; tried to swim in lava to escape &lt;player/mob&gt;"><code>lava.player</code></a></td>
+<td>Being in Lava while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was struck by a lightning bolt"><code>lightningBolt</code></a></td>
+<td>Being struck by a Lightning Bolt.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was struck by a lightning bolt whilst fighting &lt;player/mob"><code>lightningBolt.player</code></a></td>
+<td>Being struck by a Lightning Bolt while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was killed by magic"><code>magic</code></a></td>
+<td>Being damaged by a damage source considered as magic damage such as from Conduits or harmful status effects like Instant Damage or Poison.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was killed by magic whilst trying to escape &lt;player/mob&gt;"><code>magic.player</code></a></td>
+<td>Being damaged by a damage source considered as magic damage such as from Conduits or harmful status effects like Instant Damage or Poison while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was slain by &lt;mob&gt;"><code>mob</code></a></td>
+<td>Being hit by a mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was slain by &lt;mob&gt; using &lt;item&gt;"><code>mob.item</code></a></td>
+<td>Being hit by a mob holding a renamed item.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; burned to death"><code>onFire</code></a></td>
+<td>Burning.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; burned to a crisp whilst fighting &lt;player/mob&gt;"><code>onFire.player</code></a></td>
+<td>Burning while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; fell out of the world"><code>outOfWorld</code></a></td>
+<td>Falling into the void.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; didn't want to live in the same world as &lt;player/mob&gt;"><code>outOfWorld.player</code></a></td>
+<td>Falling into the void while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was slain by &lt;player&gt;"><code>player</code></a></td>
+<td>Being hit by a player.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was slain by &lt;player&gt; using &lt;item&gt;"><code>player.item</code></a></td>
+<td>Being hit by a player holding a renamed item.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was obliterated by a sonically-charged shriek"><code>sonic_boom</code></a></td>
+<td>Being hit by a Warden's Sonic Boom.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was obliterated by a sonically-charged shriek whilst trying to escape &lt;player/mob&gt;"><code>sonic_boom.player</code></a></td>
+<td>Being hit by a Warden's Sonic Boom whilst fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was obliterated by a sonically-charged shriek whilst trying to escape &lt;player/mob&gt; wielding &lt;item&gt;"><code>sonic_boom.item</code></a></td>
+<td>Being hit by a Warden's Sonic Boom whilst fighting a player/mob using a renamed item.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was impaled on a stalagmite"><code>stalagmite</code></a></td>
+<td>Falling onto a Stalagmite.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was impaled on a stalagmite whilst fighting &lt;player/mob&gt;"><code>stalagmite.player</code></a></td>
+<td>Falling onto a Stalagmite while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; starved to death"><code>starve</code></a></td>
+<td>Being damaged by starvation.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; starved to death whilst fighting &lt;player/mob&gt;"><code>starve.player</code></a></td>
+<td>Being damaged by starvation while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was stung to death"><code>sting</code></a></td>
+<td>Being stung by a bee.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was stung to death by &lt;player/mob&gt;"><code>sting.player</code></a></td>
+<td>Being stung by a player/mob. <strong>Unused in vanilla.</strong></td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was stung to death by &lt;player/mob&gt; using &lt;item&gt;"><code>sting.item</code></a></td>
+<td>Being stung by a player/mob holding a renamed item. <strong>Unused in vanilla.</strong></td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was poked to death by a sweet berry bush"><code>sweetBerryBush</code></a></td>
+<td>Walking through a Sweet Berry Bush.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was poked to death by a sweet berry bush whilst trying to escape &lt;player/mob&gt;"><code>sweetBerryBush.player</code></a></td>
+<td>Walking through a Sweet Berry Bush while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was killed trying to hurt &lt;player/mob&gt;"><code>thorns</code></a></td>
+<td>Hitting a player/mob that is wearing an armor with the Thorns enchantment. Also applies to hurting Guardians/Elder Guardians.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was killed by &lt;item&gt; trying to hurt &lt;player/mob&gt;"><code>thorns.item</code></a></td>
+<td>Hitting a player/mob that is wearing an armor with the Thorns enchantment, and holding a renamed item. Also applies to hurting Guardians/Elder Guardians.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was pummeled by &lt;player/mob&gt;"><code>thrown.item</code></a></td>
+<td>Being hit by a projectile thrown by a player/mob. <strong>Unused in vanilla.</strong></td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was impaled by &lt;player/mob&gt;"><code>trident</code></a></td>
+<td>Being hit by a Trident thrown by a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was impaled by &lt;player/mob&gt; using &lt;item&gt;"><code>trident.item</code></a></td>
+<td>Being hit by a Trident thrown by a player/mob holding a renamed item.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; withered away"><code>wither</code></a></td>
+<td>Being damaged by the Wither status effect.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; withered away whilst fighting &lt;player/mob&gt;"><code>wither.player</code></a></td>
+<td>Being damaged by the Wither status effect while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was shot by a skull from &lt;player/mob&gt;"><code>witherSkull</code></a></td>
+<td>Being hit by a Wither Skull shot by a player/mob.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list_of_origins_damage_source_names">List of Origins damage source names</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="##" title="&lt;victim&gt; died to damage over time effect"><code>genericDamageOverTime</code></a></td>
+<td>Being damaged by a power that uses the <code>origins:damage_over_time</code> power type with no specified damage source name.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; died to damage over time effect whilst fighting &lt;player/mob&gt;"><code>genericDamageOverTime.player</code></a></td>
+<td>Being damaged by a power that uses the <code>origins:damage_over_time</code> power type with no specified damage source name while fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; took a bath for too long"><code>hurt_by_water</code></a></td>
+<td>Being damaged by the <code>origins:water_vulnerability</code> power.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; was put underwater by &lt;player/mob&gt;"><code>hurt_by_water.player</code></a></td>
+<td>Being damaged by the <code>origins:water_vulnerability</code> power whilst fighting a player/mob.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; didn't manage to keep wet"><code>no_water_for_gills</code></a></td>
+<td>Losing air with the <code>origins:water_breathing</code> power.</td>
+</tr>
+<tr>
+<td><a href="##" title="&lt;victim&gt; didn't manage to get wet because they were fighting &lt;player/mob&gt;"><code>no_water_for_gills.player</code></a></td>
+<td>Losing air with the <code>origins:water_breathing</code> power while fighting a player/mob.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../biome_categories/" class="btn btn-neutral float-left" title="Biome Categories"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../feature_renderers/" class="btn btn-neutral float-right" title="Feature Renderers">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../biome_categories/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../feature_renderers/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

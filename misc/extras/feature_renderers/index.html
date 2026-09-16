@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Feature Renderers - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Feature Renderers";
+        var mkdocs_page_input_path = "misc/extras/feature_renderers.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/data_types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Feature Renderers</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Extras</li>
+      <li class="breadcrumb-item active">Feature Renderers</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="list_of_feature_renderers">List of Feature Renderers</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>armor</code></td>
+<td>The armor that an entity is wearing.</td>
+</tr>
+<tr>
+<td><code>cape</code></td>
+<td>The cape that a player might have.</td>
+</tr>
+<tr>
+<td><code>cat_collar</code></td>
+<td>The collar of a tamed Cat.</td>
+</tr>
+<tr>
+<td><code>deadmau5</code></td>
+<td>The <a href="../../../img/deadmau5_ears_render.png">mouse ears</a> that the official Deadmau5 Minecraft account has on its head.</td>
+</tr>
+<tr>
+<td><code>dolphin_held_item</code></td>
+<td>The item in a Dolphin's mouth that appears when the Dolphin is playing with the said item.</td>
+</tr>
+<tr>
+<td><code>drowned_overlay</code></td>
+<td>The outer layer of the Drowned's texture (clothes, vegetation, etc.).</td>
+</tr>
+<tr>
+<td><code>elytra</code></td>
+<td>The elytra on the back of an entity. Also works for elytras from the <a href="../../../types/power_types/elytra_flight/">Elytra Flight (Power Type)</a>.</td>
+</tr>
+<tr>
+<td><code>enderman_block</code></td>
+<td>The block an Enderman is holding.</td>
+</tr>
+<tr>
+<td><code>energy_swirl_overlay</code></td>
+<td>The animated swirling texture that appears on a Creeper (when charged) and a Wither Boss (when at half health).</td>
+</tr>
+<tr>
+<td><code>eyes</code></td>
+<td>The glow-in-the-dark eyes of a Spider, Cave Spider and Enderman.</td>
+</tr>
+<tr>
+<td><code>fox_held_item</code></td>
+<td>The item in a Fox's mouth.</td>
+</tr>
+<tr>
+<td><code>head</code></td>
+<td>The non-armor item on an entity's head.</td>
+</tr>
+<tr>
+<td><code>held_item</code></td>
+<td>The item in the hands of a bipedal mob.</td>
+</tr>
+<tr>
+<td><code>horse_armor</code></td>
+<td>The armor on a Horse that appears when the Horse is wearing an armor.</td>
+</tr>
+<tr>
+<td><code>horse_marking</code></td>
+<td>The patterns on a Horse. (See <a href="https://minecraft.wiki/w/Horse#Appearance">Minecraft Wiki: Horse (Appearance)</a>)</td>
+</tr>
+<tr>
+<td><code>iron_golem_crack</code></td>
+<td>The cracks on an Iron Golem that appears when the Iron Golem is damaged.</td>
+</tr>
+<tr>
+<td><code>iron_golem_flower</code></td>
+<td>The flowers and vines that appears on an Iron Golem.</td>
+</tr>
+<tr>
+<td><code>llama_decor</code></td>
+<td>The decoration on a Llama that appears when a Llama is wearing a certain carpet. (See <a href="https://minecraft.wiki/w/Llama#Decoration">Minecraft Wiki: Llama (Decoration)</a>)</td>
+</tr>
+<tr>
+<td><code>mooshroom_mushroom</code></td>
+<td>The mushrooms on the back of Mooshrooms.</td>
+</tr>
+<tr>
+<td><code>panda_held_item</code></td>
+<td>The item a Panda is holding that appears when the Panda is eating.</td>
+</tr>
+<tr>
+<td><code>saddle</code></td>
+<td>The saddle on a Pig or any mobs that can have saddles.</td>
+</tr>
+<tr>
+<td><code>sheep_wool</code></td>
+<td>The wool coat of a Sheep.</td>
+</tr>
+<tr>
+<td><code>shoulder_parrot</code></td>
+<td>The parrot(s) perching on a player.</td>
+</tr>
+<tr>
+<td><code>shulker_head</code></td>
+<td>The head of a Shulker.</td>
+</tr>
+<tr>
+<td><code>slime_overlay</code></td>
+<td>The translucent, jelly-like part of a Slime.</td>
+</tr>
+<tr>
+<td><code>snowman_pumpkin</code></td>
+<td>The pumpkin on the head of a Snow Golem.</td>
+</tr>
+<tr>
+<td><code>stray_overlay</code></td>
+<td>The teared clothing of a Stray.</td>
+</tr>
+<tr>
+<td><code>stuck_objects</code></td>
+<td>The objects that can get stuck to a player, like Arrows or Bee Stingers.</td>
+</tr>
+<tr>
+<td><code>trident_riptide</code></td>
+<td>The animated swirling texture that appears when a player uses a Trident that has the Riptide enchantment.</td>
+</tr>
+<tr>
+<td><code>tropical_fish_color</code></td>
+<td>The patterns on top of a Tropical Fish's base color (See <a href="https://minecraft.wiki/w/Tropical_Fish#Varieties">Minecraft Wiki: Tropical Fish (Varieties)</a>)</td>
+</tr>
+<tr>
+<td><code>villager_clothing</code></td>
+<td>The biome-dependent clothes of a Villager.</td>
+</tr>
+<tr>
+<td><code>villager_held_item</code></td>
+<td>The item that a Villager presents in their arms when a player holds an item that they want to buy.</td>
+</tr>
+<tr>
+<td><code>wolf_collar</code></td>
+<td>The collar of a tamed Wolf.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../damage_source_names/" class="btn btn-neutral float-left" title="Damage Source Names"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../keybindings/" class="btn btn-neutral float-right" title="Keybindings">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../damage_source_names/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../keybindings/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

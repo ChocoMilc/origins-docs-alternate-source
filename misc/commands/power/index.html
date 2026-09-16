@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>/power (Command) - Origins Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "/power (Command)";
+        var mkdocs_page_input_path = "misc/commands/power.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Origins Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datapack Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_origin/">Defining an Origin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/define_power/">Defining a Power</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/data/origin_conditions_in_layers/">Origin conditions in layers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Add-on Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/workspace_setup/">Workspace Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../guides/addon/dependencies/">Dependencies Explained</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">JSON</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/badge/">Badge JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/global_power_set/">Global Power Set JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin/">Origin JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/origin_layer/">Origin Layer JSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../json/power/">Power JSON</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/badge_types/">Badge Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/data_types/">Data Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/power_types/">Power Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Action Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_action_types/">Bi-entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_action_types/">Block Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_action_types/">Entity Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_action_types/">Item Action Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_action_types/">Meta Action Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Condition Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/bientity_condition_types/">Bi-entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/biome_condition_types/">Biome Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/block_condition_types/">Block Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/damage_condition_types/">Damage Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/entity_condition_types/">Entity Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/fluid_condition_types/">Fluid Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/item_condition_types/">Item Condition Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../types/meta_condition_types/">Meta Condition Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../advancement_triggers/">Advancement Triggers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../base_contents/">Base Contents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../item_modifiers/">Item Modifiers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../items/">Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../predicates/">Predicates</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Extras</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../extras/biome_categories/">Biome Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../extras/damage_source_names/">Damage Source Names</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../extras/feature_renderers/">Feature Renderers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../extras/keybindings/">Keybindings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../extras/positioned_item_stack_slots/">Positioned Item Stack Slots</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../extras/sprites/">Sprites</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../extras/value_modifying_power_classes/">Value Modifying Power Classes</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Origins Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">/power (Command)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="power"><code>/power</code></h1>
+<p>The <code>/power</code> command can be used to grant powers, revoke powers, and check if an entity has a certain power. Every power in Apoli comes from a specific source (an identifier). If a power has no sources, the entity does not have the power. If a power has at least one source, the entity does have the power. For each power, the sources are unique, meaning that a single source can not grant the same power twice.</p>
+<h3 id="syntax">Syntax:</h3>
+<pre><code class="language-mcfunction">power clear &lt;targets&gt;
+</code></pre>
+<p>Clear all the powers from the specified target(s).
+<br></p>
+<ul>
+<li><code>&lt;targets&gt;</code> being a target selector, username, or UUID<ul>
+<li>(e.g: <code>@a</code>, <code>eggohito</code>, <code>70ecd8a7-5abb-492a-a3b3-9aae099400db</code>)
+<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mcfunction">power grant &lt;targets&gt; &lt;power&gt; [&lt;source&gt;]
+</code></pre>
+<p>Grant a power to the specified target(s) (from a specific power source, if specified)
+<br></p>
+<ul>
+<li>
+<p><code>&lt;targets&gt;</code> being a target selector, username, or UUID</p>
+<ul>
+<li>(e.g: <code>@a</code>, <code>eggohito</code>, <code>70ecd8a7-5abb-492a-a3b3-9aae099400db</code>)</li>
+</ul>
+</li>
+<li>
+<p><code>&lt;power&gt;</code> being the namespace and ID of a power</p>
+<ul>
+<li>(e.g: <code>origins:arcane_skin</code> (<code>data/origins/powers/arcane_skin.json</code>))</li>
+</ul>
+</li>
+<li>
+<p><code>[&lt;source&gt;]</code> being the source of the power; optional; defaults to <code>apoli:command</code></p>
+<ul>
+<li>(e.g: <code>example:test</code>)
+<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mcfunction">power has &lt;targets&gt; &lt;power&gt;
+</code></pre>
+<p>Check if the specified target(s) has a certain power.
+<br></p>
+<ul>
+<li>
+<p><code>&lt;targets&gt;</code> being a target selector, username, or UUID</p>
+<ul>
+<li>(e.g: <code>@a</code>, <code>eggohito</code>, <code>70ecd8a7-5abb-492a-a3b3-9aae099400db</code>)</li>
+</ul>
+</li>
+<li>
+<p><code>&lt;power&gt;</code> being the namespace and ID of a power</p>
+<ul>
+<li>(e.g: <code>origins:arcane_skin</code> (<code>data/origins/powers/arcane_skin.json</code>))
+<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mcfunction">power list &lt;target&gt; [&lt;subpower&gt;]
+</code></pre>
+<p>List all the powers available from the specified target.
+<br></p>
+<ul>
+<li>
+<p><code>&lt;target&gt;</code> being a target selector, username, or UUID; can only select one at a time.</p>
+<ul>
+<li>(e.g: <code>@a[limit = 1]</code>, <code>@p</code>, <code>eggohito</code>, <code>70ecd8a7-5abb-492a-a3b3-9aae099400db</code>)</li>
+</ul>
+</li>
+<li>
+<p><code>[&lt;subpower&gt;]</code> being a boolean that determines whether the list should include sub-powers (as in powers inside of a <a href="../../../types/power_types/multiple/">Multiple</a> super-power); optional; defaults to <code>true</code></p>
+<ul>
+<li>(e.g: <code>true</code>, <code>false</code>)
+<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mcfunction">power remove &lt;targets&gt; &lt;power&gt;
+</code></pre>
+<p>Remove a power from the specified target.
+<br></p>
+<ul>
+<li>
+<p><code>&lt;targets&gt;</code> being a target selector, username, or UUID</p>
+<ul>
+<li>(e.g: <code>@a</code>, <code>eggohito</code>, <code>70ecd8a7-5abb-492a-a3b3-9aae099400db</code>)</li>
+</ul>
+</li>
+<li>
+<p><code>&lt;power&gt;</code> being the namespace and ID of a power</p>
+<ul>
+<li>(e.g: <code>origins:arcane_skin</code> (<code>data/origins/powers/arcane_skin.json</code>))
+<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mcfunction">power revoke &lt;targets&gt; &lt;power&gt; [&lt;source&gt;]
+</code></pre>
+<p>Revoke a power from the specified target(s) (and from a specific power source, if specified.)
+<br></p>
+<ul>
+<li>
+<p><code>&lt;targets&gt;</code> being a target selector, username, or UUID</p>
+<ul>
+<li>(e.g: <code>@a</code>, <code>eggohito</code>, <code>70ecd8a7-5abb-492a-a3b3-9aae099400db</code>)</li>
+</ul>
+</li>
+<li>
+<p><code>&lt;power&gt;</code> being the namespace and ID of a power</p>
+<ul>
+<li>(e.g: <code>origins:arcane_skin</code> (<code>data/origins/powers/arcane_skin.json</code>))</li>
+</ul>
+</li>
+<li>
+<p><code>[&lt;source&gt;]</code> being the source of the power, defaults to <code>apoli:command</code></p>
+<ul>
+<li>(e.g: <code>example:test</code>)
+<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mcfunction">power revokeall &lt;targets&gt; &lt;source&gt;
+</code></pre>
+<p>Revoke all the powers from the specified target(s) that are granted by the specified source.
+<br></p>
+<ul>
+<li>
+<p><code>&lt;targets&gt;</code> being a target selector, username, or UUID</p>
+<ul>
+<li>(e.g: <code>@a</code>, <code>eggohito</code>, <code>70ecd8a7-5abb-492a-a3b3-9aae099400db</code>)</li>
+</ul>
+</li>
+<li>
+<p><code>&lt;source&gt;</code> being the source to completely revoke all powers from</p>
+<ul>
+<li>(e.g: <code>example:test</code>)
+<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mcfunction">power sources &lt;target&gt; &lt;power&gt;
+</code></pre>
+<p>List all the sources of a power from the specified target.
+<br></p>
+<ul>
+<li>
+<p><code>&lt;target&gt;</code> being a target selector, username, or UUID; can only select one at a time</p>
+<ul>
+<li>(e.g: <code>@a[limit = 1]</code>, <code>@p</code>, <code>eggohito</code>, <code>70ecd8a7-5abb-492a-a3b3-9aae099400db</code>)</li>
+</ul>
+</li>
+<li>
+<p><code>&lt;power&gt;</code> being the namespace and ID of a power</p>
+<ul>
+<li>(e.g: <code>origins:arcane_skin</code> (<code>data/origins/powers/arcane_skin.json</code>))</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mcfunction">power dump &lt;power&gt;
+</code></pre>
+<p>Prints the JSON data of the specified power to the in-game chat.
+<br></p>
+<ul>
+<li><code>&lt;power&gt;</code> being the namespace and ID of a power<ul>
+<li>(e.g: <code>origins:arcane_skin</code> (<code>data/origins/powers/arcane_skin.json</code>))</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
