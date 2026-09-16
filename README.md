@@ -4,4 +4,4 @@ An alternate link to the Origins Wiki for those unable to access the actual wiki
 
 ---
 
-v1.1
+v1.2
